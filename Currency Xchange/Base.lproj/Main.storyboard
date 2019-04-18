@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Currency_Xchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-6m-DQb">
+                                <rect key="frame" x="0.0" y="69" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Xchange" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOb-sE-pCG">
+                                <rect key="frame" x="78" y="20" width="219" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="IRj-ix-9vK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCN-F9-UbA">
+                                <rect key="frame" x="78" y="170" width="219" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="i7T-hA-Otj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-tN-HZY">
+                                <rect key="frame" x="78" y="271" width="219" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="kBw-rG-yeg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VND:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owU-09-sFg">
+                                <rect key="frame" x="78" y="377" width="219" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ZT8-zM-Ifp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AKD-tN-HZY" firstAttribute="trailing" secondItem="owU-09-sFg" secondAttribute="trailing" id="2i3-9p-d0u"/>
+                            <constraint firstItem="AKD-tN-HZY" firstAttribute="leading" secondItem="owU-09-sFg" secondAttribute="leading" id="ClU-ad-eCh"/>
+                            <constraint firstItem="pOb-sE-pCG" firstAttribute="trailing" secondItem="fCN-F9-UbA" secondAttribute="trailing" id="J6a-RV-27R"/>
+                            <constraint firstItem="pOb-sE-pCG" firstAttribute="leading" secondItem="fCN-F9-UbA" secondAttribute="leading" id="QRG-1Y-9Md"/>
+                            <constraint firstItem="fCN-F9-UbA" firstAttribute="leading" secondItem="AKD-tN-HZY" secondAttribute="leading" id="SiZ-Xc-deO"/>
+                            <constraint firstItem="Kyy-6m-DQb" firstAttribute="top" secondItem="pOb-sE-pCG" secondAttribute="bottom" constant="13" id="WiQ-PE-JIy"/>
+                            <constraint firstItem="owU-09-sFg" firstAttribute="top" secondItem="AKD-tN-HZY" secondAttribute="bottom" constant="70" id="c4F-GF-Un2"/>
+                            <constraint firstAttribute="trailing" secondItem="Kyy-6m-DQb" secondAttribute="trailing" id="dli-NS-Otq"/>
+                            <constraint firstItem="AKD-tN-HZY" firstAttribute="top" secondItem="fCN-F9-UbA" secondAttribute="bottom" constant="65" id="gOX-zQ-jHI"/>
+                            <constraint firstItem="Kyy-6m-DQb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jtR-0r-OAQ"/>
+                            <constraint firstItem="fCN-F9-UbA" firstAttribute="top" secondItem="Kyy-6m-DQb" secondAttribute="bottom" constant="45" id="kbD-kr-xFV"/>
+                            <constraint firstItem="pOb-sE-pCG" firstAttribute="centerX" secondItem="Kyy-6m-DQb" secondAttribute="centerX" id="l3H-59-FLu"/>
+                            <constraint firstItem="fCN-F9-UbA" firstAttribute="trailing" secondItem="AKD-tN-HZY" secondAttribute="trailing" id="odO-Wg-lso"/>
+                            <constraint firstItem="pOb-sE-pCG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="viJ-s4-eQE"/>
+                            <constraint firstItem="pOb-sE-pCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="zBe-jq-h8L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="eurLabel" destination="fCN-F9-UbA" id="NGh-Yz-WMS"/>
+                        <outlet property="searchBar" destination="Kyy-6m-DQb" id="2Pt-QY-iow"/>
+                        <outlet property="usdLabel" destination="AKD-tN-HZY" id="bZE-V5-NlM"/>
+                        <outlet property="vndLabel" destination="owU-09-sFg" id="xSH-xa-znk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
